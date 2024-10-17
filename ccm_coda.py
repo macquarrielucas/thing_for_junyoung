@@ -264,8 +264,8 @@ def ccm(X, Y, num_features, type_Y, epsilon, learning_rate=0.001,
 
         if verbose and i % 100 == 0:
             print("\niteration", i, "loss", loss.numpy(), end='')
-            print("\nweights:")
-            print(fs.w.numpy())
+            # print("\nweights:")
+            # print(fs.w.numpy())
             if continuation:
                 print(" // sigma:", sigma.numpy(), end='')
         # Continuation
